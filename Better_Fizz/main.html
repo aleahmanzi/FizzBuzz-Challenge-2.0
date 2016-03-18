@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz</title>
+</head>
+<body>
+
+<style>
+.main_wrap { font-size: 50px; text-align: center; }
+
+</style>
+
+<div class="main_wrap">Fizz Buzz Challenge 2.0
+</div><!-- . main_wrap - -->
+
+
+<style>
+.data_wrap { text-align: center; font-size: 35px; }
+
+</style>
+
+<script>
+
+(function($, window, document) {
+  //alert("hello?"); -- WORKS!
+ var userData = parseInt(prompt("Provide a number for the FizzBuzz challenge."));
+
+ var userLoop = function(){
+    for (var i = 1; i <= userData; i++){
+     if (i%3 == 0 && i%5 == 0){
+       document.write("FizzBuzz" + "<br />");
+
+     } else if (i%3 == 0) {
+       document.write("Fizz" + "<br />");
+
+     } else if (i%5 == 0) {
+       document.write("Buzz" + "<br />");
+
+     } else {
+       document.write(i + "<br />");
+     };
+
+    };
+ };  
+ userLoop();
+
+
+  }(window.jQuery, window, document)
+  );
+
+</script>
+
+<div class="data_wrap">
+ <div class="list_data">
+  <div class="loop_data">
+  </div><!-- . loop_data- -->
+ </div><!-- . list_data- -->
+</div><!-- . data_wrap- -->
+
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+</body>
+</html>
